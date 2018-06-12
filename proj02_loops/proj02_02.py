@@ -10,6 +10,8 @@ previous two numbers in the sequence. The sequence looks like this:
 1, 1, 2, 3, 5, 8, 13...
 """
 
+# Fibonacci Generator
+
 previous = 0
 current = 1
 next = int(previous + current)
@@ -20,8 +22,11 @@ for number in range(0, times):
     previous = current
     current = next
 
-previous2 = 2
+# Exponent Generator
+
+root = int(raw_input("What number do you want to square?"))
+previous2 = root
 times2 = int(raw_input("How many powers of 2 do you want?"))
 for number in range(0, times2):
     print previous2
-    previous2 = previous2 * 2
+    previous2 = previous2 * root
