@@ -17,3 +17,19 @@
 # Enter a number to sum, or 0 to indicate you are finished: 10
 # Enter a number to sum, or 0 to indicate you are finished: 0
 #The sum of your numbers is: 21
+
+x = 1
+sum = 0
+while x != 0:
+    x = int(raw_input("Enter a number to sum."))
+    sum = sum + x
+print "The sum of your numbers is " + str(sum) + "."
+
+
+
+
+
+
+
+
+
