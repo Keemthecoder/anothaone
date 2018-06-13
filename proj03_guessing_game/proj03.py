@@ -11,13 +11,13 @@ or exactly right. Keep the game going until the user types exit.
 Keep track of how many guesses the user has taken, and when the game ends, print this out.
 
 """
-
+print "Welcome to Cole and Abhi's Guessing Game."
 import random
-var = random.randint(1,10)
+var = random.randint(1,100)
 guess = 0
 guessnumber = int(raw_input("How many guesses do you want?"))
 for x in range(0, guessnumber):
-    guess = int(raw_input("Guess a number between 1 and 10, including 1 and 10."))
+    guess = int(raw_input("Guess a number between 1 and 100, including 1 and 100."))
     if guess == var:
         print "Congrats, you guessed the number!"
         break
@@ -29,6 +29,8 @@ for x in range(0, guessnumber):
     print "You have " + str(guessnumber) + " tries left."
     if guessnumber == 0:
         print "You weren't able to guess the number! Try again!"
+
+
 
 
 
