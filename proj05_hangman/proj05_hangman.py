@@ -53,7 +53,7 @@ for letter in word:
 list2 = []
 for letter in word:
     list2.append(str("_ "))
-print list1
+#print list1
 print "Welcome to Cole and Connor's Hangman Game!"
 guess = int(raw_input("How many guesses do you want?"))
 spot = 0
@@ -63,9 +63,9 @@ for item in list2:
     s = s + item
 print "The word has this many letters in it:" + s
 print "-----------------------------------------------------------------"
-while guess > 0
+while guess > 0:
     y = raw_input("Guess a letter in the word.")
-    alphabet = alphabet.replace(y, " ")
+    alphabet = alphabet.replace(y, "_")
     spot = 0
     if y in list1:
         guess = guess - 1
@@ -82,16 +82,12 @@ while guess > 0
         print "-----------------------------------------------------------------"
     elif y not in list1:
         guess = guess - 1
-        print "Incorrect! Try again."
-        print "You have " + str(guess) + " guesses left."
+        print "Incorrect! You have " + str(guess) + " guesses left. You have completed this much of the word:"
+        print s
         print "You have this many letters of the alphabet left: " + alphabet
         print "-----------------------------------------------------------------"
     if "_ " not in list2:
         print "Congratulations, you won the game! Don't forget to play again."
         break
-#!Implement losing system!
-
-
-
-
-
+if "_ " in list2:
+    print "You couldn't guess the word. Try again!"
