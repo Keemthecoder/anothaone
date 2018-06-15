@@ -20,7 +20,7 @@ guessnumber = int(raw_input("How many guesses do you want?"))
 while guessnumber > 0:
     guess = int(raw_input("Guess a number between 1 and 100, including 1 and 100."))
     if guess == var:
-        print "Congrats, you guessed the number!"
+        print "Congrats, you guessed the number! You had " + str(guessnumber) + " guesses left."
         break
     elif guess < var:
         print "Too low!"
