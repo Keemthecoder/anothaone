@@ -20,11 +20,8 @@ def load_words():
     take a while to finish.
     """
     print "Loading word list from file..."
-    # inFile: file
     inFile = open(WORDLIST_FILENAME, 'r', 0)
-    # line: string
     line = inFile.readline()
-    # wordlist: list of strings
     wordlist = string.split(line)
     print "  ", len(wordlist), "words loaded."
     return wordlist
@@ -90,4 +87,9 @@ while guess > 0:
         print "Congratulations, you won the game! Don't forget to play again."
         break
 if "_ " in list2:
-    print "You couldn't guess the word. Try again!"
+    print "You couldn't guess the word. The word was " + word + " ."
+
+
+
+
+
